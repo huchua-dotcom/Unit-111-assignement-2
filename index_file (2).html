@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Student Profile</title>
+    <!-- Tailwind CSS CDN for Part E -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS Stylesheet for Parts A, B, C, & D -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- PART E: Tailwind Utility Styling for Header/Nav -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <h1 class="text-2xl font-bold tracking-tight text-amber-400">Jane Doe</h1>
+            <nav>
+                <ul class="flex space-x-6 text-sm md:text-base font-medium">
+                    <li><a href="#about" class="hover:text-amber-400 transition-colors">About</a></li>
+                    <li><a href="#skills" class="hover:text-amber-400 transition-colors">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-amber-400 transition-colors">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container-main">
+
+        <!-- PART A & B: About Section with Custom Flexbox -->
+        <section id="about" class="section-card hero-flex">
+            <div class="hero-avatar">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture of Jane Doe" class="profile-img">
+            </div>
+            <div class="hero-content">
+                <h2>Software Engineering Student</h2>
+                <p class="subtitle">Africa University | CIS2103 - Web Technologies</p>
+                <p class="bio">
+                    Passionate about building responsive, accessible, and user-centric web applications. Currently exploring modern CSS architectures, JavaScript frameworks, and utility-first styling.
+                </p>
+            </div>
+        </section>
+
+        <!-- PART C: Skills & Projects Section with CSS Grid -->
+        <section id="skills" class="section-card">
+            <h2>Technical Skills</h2>
+            <div class="grid-skills">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <p>Python, Node.js, SQL Basics</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Workflow</h3>
+                    <p>Git, GitHub, VS Code, Figma</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-card">
+            <h2>Featured Projects</h2>
+            <div class="grid-projects">
+                <article class="project-card">
+                    <h3>Practical Assignment 1</h3>
+                    <p>A semantic HTML5 profile page focusing on accessibility structure and core metadata layout.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Responsive Portfolio</h3>
+                    <p>A fully responsive multi-device web page incorporating CSS Grid, Flexbox, and Tailwind utilities.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Smart Campus App</h3>
+                    <p>A conceptual UI/UX architecture project designed for university student task management.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PART E: Tailwind Utility Styling for Contact Form -->
+        <section id="contact" class="bg-white rounded-xl shadow-md p-6 my-8 border border-gray-100 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">Get In Touch</h2>
+            <form class="space-y-4">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="w-full sm:w-1/2">
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    </div>
+                    <div class="w-full sm:w-1/2">
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                </div>
+                <button type="submit" class="w-full sm:w-auto bg-slate-900 text-amber-400 font-semibold px-6 py-2.5 rounded-lg hover:bg-slate-800 transition-colors">
+                    Send Message
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 border-t border-gray-200 text-sm text-gray-500">
+        <p>&copy; 2026 Jane Doe. Africa University CIS2103 Practical Assignment 2.</p>
+    </footer>
+
+</body>
+</html>
